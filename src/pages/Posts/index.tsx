@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import {Card, Container} from './styles';
+
 interface Post {
   userId: number;
   id: number;
@@ -22,12 +24,14 @@ const Posts: React.FC = () => {
 
   return(
     <>
-      <ul>
-        {posts.map(post =>( 
-            <li key={post.id}>{post.title}</li>
-          )
-        )}
-      </ul>
+      <Container>
+        <ul>
+          {posts.map(post =>( 
+              <Card key={post.id}>{post.title}</Card>
+            )
+          )}
+        </ul>
+      </Container>
     </>
   );
 
