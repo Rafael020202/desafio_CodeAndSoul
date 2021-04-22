@@ -14,12 +14,38 @@ export const PostContainer = styled.div`
   padding: 10px;
   border-radius: 10px;
 
-  max-width: 500px;
-
-  h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
+  max-width: 560px;
 
   box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
+
+  h1 {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  span {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  hr{
+    background-color: black;
+    margin: 0 0 10px 0;
+  }
+
+  div {
+    font-size: 0.7rem;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
 `;
+
+
